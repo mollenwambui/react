@@ -1,0 +1,25 @@
+.user-journey-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20
+}  
+input[type="checkbox"] {
+    /* Hide the default checkbox appearance */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* Set a custom size for the checkbox */
+    width: 16px;
+    height: 16px;
+    /* Add custom styles for the checkbox */
+    border: 2px solid orange;
+    border-radius: 3px;
+    background-color: white;
+  }
+  
+  input[type="checkbox"]:checked {
+    /* Change the check fill color to orange */
+    background-color: orange;
+  }
+  

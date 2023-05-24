@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+body{
+    background-color: #FDF7F3;
+}
+
+/* Navbar.css */
+/* Navbar.css */
+
+nav {
+  display: flex;
+ margin-left: 65%;
+  padding-right: 20px; /* Add space on the right */
+  margin-bottom: 20px; /* Add space between Navbars */
+ 
+}
+
+/* Rest of your CSS styles */
+
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-left: 10px;
+    margin-top: 4%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #FF914D;
+  }
+  
+  li:not(:last-child) {
+    margin-right: 10px; /* Add space between words */
+  }
+  
+  li:last-child a {
+    margin-left: 10px; /* Add space after "Introduction" */
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    /* Add more styles as needed */
+  }
+  
+  .content {
+    margin-top: 60px; /* Adjust this value to match the height of your Navbar */
+    /* Add more styles as needed */
+  }
+  @media (min-width: 480px) and (max-width: 1024px) {
+    nav{
+      /* Adjust styles for smaller screens */
+        /* For example, you can change the layout to a vertical stack */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+  }
+   
+  
+  

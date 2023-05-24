@@ -1,0 +1,266 @@
+.intro3{
+    border: 0px solid grey;
+   background-color:#FF914D ;
+   border-color: grey;
+   width: 85%;
+   margin-left: 8%;
+   color: white;
+   height: 5vh;
+   margin-top: -1%;
+   align-items: center;
+   
+}
+.table4{
+    margin-left: 8%;
+    width: 101%; 
+  
+}
+
+.table4 table{
+    height: 80px;
+}
+
+.label{
+   
+    margin-top: -7%;
+}
+.label2{
+
+    margin-top: 1%;
+}
+.tool2{
+    width: 7%;
+    font-weight: bolder;
+    padding-left: 2.5%;
+}
+
+.table5{
+    margin-left: 8%;
+    width: 101%; 
+    margin-top: 3%;
+}
+.table5 table{
+    height: 80px;
+}
+
+.label4{
+   
+    margin-top: -5%;
+}
+.internal{
+  margin-top: 7%;
+  margin-left: 25%;
+}
+
+.label4 input{
+    width: 73%;
+
+  
+}
+.logo2{
+    width: 13%;
+    height: 9vh;
+    margin-left: 1%;
+  
+}
+
+
+.table6{
+    margin-left: 8%;
+    width: 101%; 
+    margin-top: 4%;
+}
+
+.table6 table{
+    height: 80px;
+}
+
+.internal1{
+    margin-top: 7%;
+    margin-left: 25%;
+}
+
+.internal2{
+    margin-top: 7%;
+    margin-left: 25%;
+}
+.internal4{
+      margin-top: 7%;
+    margin-left: 25%;
+}
+.plus{
+    width: 1.65%;
+    margin-left: 73%;
+    
+}
+
+
+.first{
+
+    padding-left: 2%;
+    background-color: #FF914D;
+    border: none;
+    padding: 5px 0; /* Adjust the padding values to move the text */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84%;
+    margin-left: 8%;
+    height: 3vh;
+    padding-left: 1%;
+    font-size: 16px;
+    
+    line-height: 7%; /* Add this line to adjust the line height */
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.in{
+    margin-left: 25%;
+    margin-top: 7%;
+}
+
+.second{
+   
+    padding-left: 2%;
+    background-color: #FF914D;
+    border: none;
+    padding: 5px 0; /* Adjust the padding values to move the text */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84%;
+    margin-left: 8%;
+    height: 3vh;
+    padding-left: 1%;
+    font-size: 14px;
+    
+    line-height: 7%; /* Add this line to adjust the line height */
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.third{
+   
+    padding-left: 2%;
+    background-color: #FF914D;
+    border: none;
+    padding: 5px 0; /* Adjust the padding values to move the text */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84%;
+    margin-left: 8%;
+    height: 3vh;
+    padding-left: 1%;
+    font-size: 14px;
+    
+    line-height: 7%; /* Add this line to adjust the line height */
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.forth{
+ 
+    padding-left: 2%;
+    background-color: #FF914D;
+    border: none;
+    padding: 5px 0; /* Adjust the padding values to move the text */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84%;
+    margin-left: 8%;
+    height: 3vh;
+    padding-left: 1%;
+    font-size: 14px;
+    
+    line-height: 7%; /* Add this line to adjust the line height */
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fifth{
+    
+    padding-left: 2%;
+    background-color: #FF914D;
+    border: none;
+    padding: 5px 0; /* Adjust the padding values to move the text */
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84%;
+    margin-left: 8%;
+    height: 3vh;
+    padding-left: 1%;
+    font-size: 14px;
+    
+    line-height: 7%; /* Add this line to adjust the line height */
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.results{
+    padding-left: 2%;
+    background-color: #FF914D;
+    border: none;
+    padding: 5px 0;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 84%;
+    margin-left: 8%;
+    height: 5vh;
+    padding-left: 1%;
+    font-size: 24px;
+    line-height: 7%;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: background-color 0.3s ease; /* Add a transition for the background color */
+  }
+  
+  .results:hover {
+    background-color: grey; /* Change the background color on hover */
+  }
+.border{
+    border-bottom: solid 1px gray;
+    margin-top: 5%;
+    width: 90%;
+    margin-left: 5%;
+}
+.card3{
+
+    height: 150vh;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 14%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    
+    overflow-y: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    overflow-x: hidden; 
+  }
+  input{
+    background-color:#F4F2F2;
+    border: none;
+    height: 3vh;
+ 
+  }
+
+  .button-container {
+    display: flex;
+  
+  }
+  .minus{
+margin-left: -50%;
+  }
