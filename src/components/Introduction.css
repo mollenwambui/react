@@ -189,3 +189,79 @@ font-size: 20px;
 input :checked{
   color: #FF914D;
 }
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  .card5 {
+    height: auto; /* Adjust the height to fit the content */
+    max-height: 70vh; /* Set a maximum height to prevent excessive scrolling */
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 8%;
+    box-shadow: 0px 10px 20px #fbe4d5;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* Add animation */
+    transform: translateY(20px);
+    opacity: 0;
+    animation: cardAnimation 0.5s forwards;
+  }
+  .card6{
+
+      height: auto; /* Adjust the height to fit the content */
+      max-height: 70vh; /* Set a maximum height to prevent excessive scrolling */
+      width: 85%;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      margin-top: 1%;
+      margin-left: 8%;
+      box-shadow: 0px 10px 20px #fbe4d5;
+      overflow: hidden; /* Hide overflow to prevent scrolling */
+      border: 2px solid white;
+      border-radius: 5px;
+      /* Add animation */
+      transform: translateY(20px);
+      opacity: 0;
+      animation: cardAnimation 0.5s forwards;
+  }
+  .card7{
+    height: auto; /* Adjust the height to fit the content */
+    max-height: 70vh; /* Set a maximum height to prevent excessive scrolling */
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 8%;
+    box-shadow: 0px 10px 20px #fbe4d5;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* Add animation */
+    transform: translateY(20px);
+    opacity: 0;
+    animation: cardAnimation 0.5s forwards;
+  }
+  .card{
+    height: auto;
+    width: 76%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 14%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    
+    overflow-y: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    overflow-x: hidden; 
+  }
+  
+}
+
+

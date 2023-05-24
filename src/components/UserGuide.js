@@ -101,19 +101,19 @@ const UserGuide = ()=>{
          <div className='label'>
          <label>
         What is your business type?
-        <input type="text" value={business} onChange={(e) => setBusiness(e.target.value)}    style={{ marginLeft: '59px' }} />
+        <input className='types'  type="text" value={business} onChange={(e) => setBusiness(e.target.value)} />
       </label>
          </div>
          <div className='label2'>
          <label>
         What is the size of your business?
-        <input type="text" value={size} onChange={(e) => setSize(e.target.value)}    style={{ marginLeft: '19px' }} />
+        <input className='sizes'   type="text" value={size} onChange={(e) => setSize(e.target.value)}   />
       </label>
          </div>
          <div className='label2'>
          <label>
         What is your product?
-        <input type="text" value={product} onChange={(e) => setProduct(e.target.value)}    style={{ marginLeft: '104px' }} />
+        <input  className='prod' type="text" value={product} onChange={(e) => setProduct(e.target.value)}  />
       </label>
          </div>
          </div>

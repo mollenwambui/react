@@ -179,7 +179,7 @@ const Export = ({ content }) => {
         <p>A new PowerPoint with the content will be created</p>
       </div>
     </div>
-      <div style={{ display: 'flex', alignItems: 'center',marginLeft:'58%',marginTop:'-15%' }}>
+      <div className='pd' style={{ display: 'flex', alignItems: 'center',marginLeft:'58%',marginTop:'-15%' }}>
         <div className='pdf'>
         <img src={pdf} alt="PDF Logo" onClick={generatePDF} style={{ cursor: 'pointer' }} />
       {loading && <p>Generating PDF...</p>}

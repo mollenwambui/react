@@ -38,7 +38,7 @@ class Navbar extends React.Component {
               to="/results"
               onClick={() => this.scrollToSection('results')}
             >
-            Results
+              Results
             </Link>
           </li>
           <li>
@@ -46,7 +46,7 @@ class Navbar extends React.Component {
               to="/export"
               onClick={() => this.scrollToSection('export')}
             >
-            Export
+              Export
             </Link>
           </li>
         </ul>

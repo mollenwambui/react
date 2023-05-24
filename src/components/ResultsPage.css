@@ -174,14 +174,36 @@
   .type{
     font-size: 18px;
    font-weight: bold;
+   margin-left: 10%;
   }
   .size{
     font-size: 18px;
     font-weight: bold;
+    margin-left: 20%;
   }
 
   .product{
     font-size: 18px;
     font-weight: bold;
+    margin-left: 17%;
+  }
+  
+  @media (min-width: 480px) and (max-width: 1024px) {
+    .card4 {
+      height: auto;
+      width: 75%;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      margin-top: 3%;
+      margin-left: 14%;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+      border: 2px solid white;
+      border-radius: 5px;
+      overflow-x: hidden; 
+    }
+
+    
   }
   
