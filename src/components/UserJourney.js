@@ -1,112 +1,111 @@
-import React from 'react';
-import { scroller } from 'react-scroll';
+import React, { useState, useEffect } from 'react';
+import './UserJourney.css';
+import { useNavigate } from 'react-router-dom';
 
-class UserJourney extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeStep: null,
-      introductionCompleted: false,
-      userGuideCompleted: false,
-    };
-  }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+const UserJourney = ({ activeSlide }) => {
+  const progressBarItems = [
+    { title: 'Strengths', className: 'stren' },
+    { title: 'Weaknesses', className: 'weak' },
+    { title: 'Opportunities', className: 'oppo' },
+    { title: 'Threats', className: 'threa' },
+  ];
 
-  handleScroll = () => {
-    const introductionSection = document.getElementById('introduction');
-    const userGuideSection = document.getElementById('user-guide');
-    const resultsSection = document.getElementById('results');
+  const [checkboxes, setCheckboxes] = useState(
+    progressBarItems.map((_, index) => index === 0)
+  );
 
-    if (introductionSection && userGuideSection && resultsSection) {
-      const scrollPosition = window.scrollY;
-      const introductionOffset = introductionSection.offsetTop;
-      const userGuideOffset = userGuideSection.offsetTop;
-      const resultsOffset = resultsSection.offsetTop;
+  const navigate = useNavigate();
+  const [factors, setFactors] = useState(['']);
+  const [weaknesses, setWeaknesses] = useState(['']);
+  const [opportunities, setOpportunities] = useState(['']);
+  const [threats, setThreats] = useState(['']);
 
-      if (
-        scrollPosition >= introductionOffset &&
-        scrollPosition < userGuideOffset &&
-        !this.state.introductionCompleted
-      ) {
-        this.setState({
-          activeStep: 'introduction',
-          introductionCompleted: true,
-          userGuideCompleted: false,
-        });
-      } else if (
-        scrollPosition >= userGuideOffset &&
-        scrollPosition < resultsOffset &&
-        !this.state.userGuideCompleted
-      ) {
-        this.setState({
-          activeStep: 'user-guide',
-          userGuideCompleted: true,
-        });
-      } else if (scrollPosition >= resultsOffset) {
-        this.setState({
-          activeStep: 'results',
-        });
-      }
+  useEffect(() => {
+    setCheckboxes((prevCheckboxes) =>
+      prevCheckboxes.map((_, index) => index <= activeSlide)
+    );
+  }, [activeSlide]);
+
+  const handleNextSlide = () => {
+    // Perform validation check here
+    if (activeSlide === 0 && factors[0] === '') {
+      // If the current slide is the first slide and factors input is empty, prevent navigation
+      return;
     }
+
+    if (activeSlide === 1 && weaknesses[0] === '') {
+      // If the current slide is the second slide and weaknesses input is empty, prevent navigation
+      return;
+    }
+
+    if (activeSlide === 2 && opportunities[0] === '') {
+      // If the current slide is the third slide and opportunities input is empty, prevent navigation
+      return;
+    }
+
+    // Proceed to the next slide
+    navigate(`/slides/${activeSlide + 1}`);
   };
 
-  scrollToSection = (sectionId) => {
-    scroller.scrollTo(sectionId, {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-      offset: -50,
+  const handleCheckResults = () => {
+    navigate('/results', {
+      state: {
+        factors,
+        weaknesses,
+        opportunities,
+        threats,
+      },
     });
   };
-
-  render() {
-    const { activeStep, introductionCompleted, userGuideCompleted } = this.state;
-
-    return (
-      <div className="user-journey" style={{ position: 'fixed', top: '50%', transform: 'translateY(-50%)' }}>
-        <div
-          className={`user-journey-step ${activeStep === 'introduction' ? 'active' : ''}`}
-          onClick={() => this.scrollToSection('introduction')}
-        >
-          <input
-            type="checkbox"
-            checked={introductionCompleted}
-            readOnly
-          />
-          Introduction
-        </div>
-        <div
-          className={`user-journey-step ${activeStep === 'user-guide' ? 'active' : ''}`}
-          onClick={() => this.scrollToSection('user-guide')}
-        >
-          <input
-            type="checkbox"
-            checked={userGuideCompleted}
-            readOnly
-          />
-          User Guide
-        </div>
-        <div
-          className={`user-journey-step ${activeStep === 'results' ? 'active' : ''}`}
-          onClick={() => this.scrollToSection('results')}
-        >
-          <input
-            type="checkbox"
-            checked={activeStep === 'results'}
-            readOnly
-          />
-          Results
+  return (
+    <div className="user-journey"         style={{ fontFamily: 'Nunito, sans-serif' }}
+    >
+      <h3 className="progress">Progress bar</h3>
+      <div className="progress-bar">
+        <div className="progress-line"></div>
+        <div className="progress-dots">
+          {progressBarItems.map((item, index) => (
+            <div
+              key={index}
+              className={`progress-dot${activeSlide >= index ? ' active' : ''}`}
+            ></div>
+          ))}
         </div>
       </div>
-    );
-  }
-}
+      <div className="progress-labels">
+        {progressBarItems.map((item, index) => (
+          <div
+            key={index}
+            className={`progress-label${
+              activeSlide === index ? ' active' : ''
+            } ${item.className}`}
+          >
+            {item.title}
+          </div>
+        ))}
+      </div>
+      <div className="checkboxes-container">
+        {checkboxes.map((checkbox, index) => (
+          <div key={index} className={`checkbox${checkbox ? ' active' : ''}`}>
+            {checkbox && (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="checkbox-icon"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            )}
+          </div>
+        ))}
+      </div>
+      <button className="result" >
+        Results loading
+      </button>
+    </div>
+  );
+};
 
 export default UserJourney;

@@ -5,7 +5,7 @@
     align-items: center;
     background-color: white;
     margin-top: 3%;
-    margin-left: 14%;
+    margin-left: 20%;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     border: 2px solid white;
@@ -16,20 +16,23 @@
   .bizz {
     margin-left: 35%;
   }
+  .result-container{
+    margin-top: 5%;
+  }
   
   .card10 {
-    height: 40vh;
-    width: 40%;
+    height: 50vh;
+    width: 42%;
     justify-content: center;
     align-items: center;
-    background-color:#2e75f0;
-    margin-top: 3%;
-    margin-left: 8%;
-    color: white;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color:#f1f3f8;
+    margin-top: 2%;
+    margin-left: 5%;
+    color: black;
+
     overflow-y: auto;
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid  #e2e8f5;
+    border-radius: 25px;
     padding: 10px;
   }
   
@@ -48,18 +51,18 @@
   }
   
   .card11 {
-    height: 40vh;
-    width: 40%;
+    height: 50vh;
+    width: 42%;
     justify-content: center;
     align-items: center;
-    background-color: #f86c0f;
-    margin-top: 3%;
-    color: white;
-    margin-left: 1%;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color:#f8f5ea;
+    margin-top: 2%;
+    margin-left: 3%;
+    color: black;
+
     overflow-y: auto;
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid #faeee6;;
+    border-radius: 25px;
     padding: 10px;
   }
   
@@ -82,18 +85,18 @@
   }
   
   .card12 {
-    height: 40vh;
-    width: 40%;
+    height: 50vh;
+    width: 42%;
     justify-content: center;
     align-items: center;
-    background-color: #46aa08;
+    background-color:#f4faf0;
     margin-top: 3%;
-    margin-left: 8%;
-    color: white;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 5%;
+    color: black;
+
     overflow-y: auto;
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid #f5efeb;
+    border-radius: 25px;
     padding: 10px;
   }
   
@@ -112,23 +115,26 @@
   }
   
   .card13 {
-    height: 40vh;
-    width: 40%;
+    height: 50vh;
+    width: 42%;
     justify-content: center;
     align-items: center;
-    background-color: #d19f09;
+    background-color:#f8ede6;
     margin-top: 3%;
-    color: white;
-    margin-left: 1%;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 3%;
+    color: black;
+
     overflow-y: auto;
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid #f0e6df;
+    border-radius: 25px;
     padding: 10px;
   }
   
   .card13 ul {
     padding-left: 20px;
+  }
+  .align{
+    padding-left: 10px;
   }
   
   .card13 li {
@@ -155,37 +161,70 @@
     white-space: pre-wrap;
   }
   
-  .strength{
+  .strengths{
     padding-bottom: 4%;
     font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+  padding-left: 10px;
+    font-weight: bold;
+    color: blue;
+  
   }
   .weakness{
     padding-bottom: 4%;
     font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #5e5507a6;
+ 
   }
   .opportunity{
     padding-bottom: 4%;
     font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #228B22;
+ 
   }
   .threats{
     padding-bottom: 4%;
     font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #F8731B;
+   
+   
   }
-  .type{
+  .business{
     font-size: 18px;
-   font-weight: bold;
-   margin-left: 10%;
+    margin-left: 1%;
+   
   }
   .size{
     font-size: 18px;
-    font-weight: bold;
-    margin-left: 20%;
+    margin-left: 1%;
+   
   }
 
   .product{
     font-size: 18px;
+  margin-left: 1%;
+  }
+
+  
+  .result-container .label {
     font-weight: bold;
-    margin-left: 17%;
+    margin-left: 40%;
+    color: #f86c0f;
+    font-size: 19px;
+  }
+  
+  .result-container .business-value {
+    font-style: italic;
+    /* Add your desired styles for the business value here */
   }
   
   @media (min-width: 480px) and (max-width: 1024px) {
@@ -203,6 +242,31 @@
       border-radius: 5px;
       overflow-x: hidden; 
     }
+    .result-container .label {
+      font-weight: bold;
+      margin-left: 40%;
+      color: #f86c0f;
+      font-size: 19px;
+    }
+    .business{
+      font-size: 18px;
+      margin-left: 40%;
+     
+     
+    }
+    .size{
+      font-size: 18px;
+      margin-left: 40%;
+     
+    }
+  
+    .product{
+      font-size: 18px;
+      margin-left: 40%;
+    }
+  .result-container{
+    margin-top: 20%;
+  }
 
     
   }

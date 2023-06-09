@@ -8,10 +8,7 @@ import Export from './Export';
 const CheckResults = () => {
   const location = useLocation();
 
-  // Check if location.state and business are defined
-  const business = location.state?.business || '';
-  const size = location.state?.size || '';
-  const product = location.state?.product || '';
+
   const factors = location.state?.factors || [];
   const weaknesses = location.state?.weaknesses || [];
   const opportunities = location.state?.opportunities || [];
@@ -19,9 +16,7 @@ const CheckResults = () => {
 
   // Create content object for export
   const exportContent = {
-    business,
-    size,
-    product,
+   
     factors,
     weaknesses,
     opportunities,
@@ -30,20 +25,18 @@ const CheckResults = () => {
 
   return (
     <div style={{ fontFamily: 'Nunito, sans-serif' }}>
-      {/* <div className="top">
-        <img src={logo} className="logo" alt="Logo" />
+      <div class="result-container">
+
+    
+
+           
+       
+       
       </div>
-      <div className="intro">
-        <h2 className="intro-title">Results</h2>
-      </div> */}
-      <div className="bizz">
-        <p className="type">Business type: {business}</p>
-        <p className="size">Size: {size}</p>
-        <p className="product">Product: {product}</p>
-      </div>
+
       <div className="both">
         <div className="card10">
-          <p className="strength">
+          <p className="strengths">
             <strong>Strengths:</strong>
           </p>
           {factors.length > 0 ? (
@@ -55,7 +48,7 @@ const CheckResults = () => {
               ))}
             </div>
           ) : (
-            <p>No Strengths found</p>
+            <p className='align'>No Strengths found</p>
           )}
         </div>
 
@@ -72,7 +65,7 @@ const CheckResults = () => {
               ))}
             </div>
           ) : (
-            <p>No weaknesses found</p>
+            <p className='align'> No weaknesses found</p>
           )}
         </div>
       </div>
@@ -90,7 +83,7 @@ const CheckResults = () => {
               ))}
             </div>
           ) : (
-            <p>No opportunities found</p>
+            <p className='align'>No opportunities found</p>
           )}
         </div>
         <div className="card13">
@@ -106,11 +99,11 @@ const CheckResults = () => {
               ))}
             </div>
           ) : (
-            <p>No threats found</p>
+            <p className='align'>No threats found</p>
           )}
         </div>
       </div>
-      
+
       {/* Add the Export component */}
       <Export content={exportContent} />
     </div>

@@ -1,25 +1,286 @@
-.user-journey-container {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20
-}  
-input[type="checkbox"] {
-    /* Hide the default checkbox appearance */
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    /* Set a custom size for the checkbox */
-    width: 16px;
-    height: 16px;
-    /* Add custom styles for the checkbox */
-    border: 2px solid orange;
-    border-radius: 3px;
+.user-journey {
+  width: 20%; /* Adjust the width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  background-color: white;
+  margin-left: 70%;
+  margin-top: -30%;
+  border-radius: 10px; /* Add border radius value */
+  box-shadow: 0px 0px 10px #f7c5c5; /* Add orange shadow */
+  height: 40vh;
+}
+
+.progress-bar {
+  position: relative;
+  height: 200px; /* Adjust the height as needed */
+}
+
+.progress-line {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: gray;
+}
+
+.progress-dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.progress-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.progress-dot.active {
+  background-color: black;
+}
+.progress-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+}
+
+.progress-label {
+  font-size: 14px;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.progress-label.active {
+  color: #000;
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.check-icon.active {
+  background-color: #000;
+}
+.checkboxes-container {
+  position: absolute;
+  top: 13%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Adjust the justify-content value */
+  height: 59%;
+
+}
+
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 1px; /* Adjust the margin as needed */
+}
+
+/* Style for the active checkbox */
+.checkbox.active {
+  background-color: orange;
+}
+.checkbox-icon {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  visibility: hidden;
+  transition: visibility 0.3s ease;
+}
+
+.checkbox.active .checkbox-icon {
+  visibility: visible;
+}
+
+.stren {
+  position: absolute;
+  top: 18%;
+  left: 20px;
+  font-size: 18px;
+}
+
+.weak {
+  position: absolute;
+  top: 34%;
+  left: 20px;
+  font-size: 18px;
+}
+
+.oppo {
+  position: absolute;
+  top: 48%;
+  left: 20px;
+  font-size: 18px;
+}
+
+.threa{
+  position: absolute;
+  top: 64%;
+  left: 20px;
+  font-size: 18px;
+}
+.result{
+  margin-left: 10%;
+  height: 4vh;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  border:  none;
+  width: 78%;
+  margin-top: 12%;
+  font-size: 13px;
+  font-weight: bolder;
+  animation: flash 1s infinite;
+}
+@keyframes flash {
+  0% {
+    background-color: #F8731B;
+  }
+  50% {
+    background-color: #f3b816;
+  }
+  100% {
+    background-color: #f1a008;
+  }
+}
+
+.progress{
+  margin-left:35%;
+ 
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  .user-journey {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
     background-color: white;
+  
+    height: auto;
+    box-shadow: none; /* Remove the box shadow */
+    border-radius: 0; /* Remove the border radius */
+  }
+
+  .progress-bar {
+    height: auto; /* Adjust the height as needed */
+    margin-bottom: 20px; /* Add margin between progress bar and other elements */
+  }
+
+  .progress-line {
+    position: static;
+    height: 2px;
+    width: 100%;
+  
+
+  }
+
+  .progress-dots {
+    flex-direction: row;
+    position: static;
+    left: auto;
+    margin-top: -1%;
+  
+  }
+
+  .progress-labels {
+    flex-direction: row;
+    position: static;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    margin-left: 10px; /* Add margin between progress labels and progress dots */
+  }
+
+  .checkboxes-container {
+    position: static;
+    top: auto;
+    right: auto;
+    margin-top: 10px; /* Add margin between checkboxes and other elements */
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around; /* Adjust the justify-content value */
   }
   
-  input[type="checkbox"]:checked {
-    /* Change the check fill color to orange */
-    background-color: orange;
+  .checkbox {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ccc;
   }
   
+  .checkbox + .checkbox {
+    margin-left: 25%; /* Add margin between checkboxes except for the first one */
+  }
+  
+  
+  .stren {
+    position: static;
+    top: 18%;
+    left: 20px;
+    font-size: 15px;
+margin-left: -3%;  }
+  
+  .weak {
+    position: static;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add spacing */
+  }
+  
+  .oppo {
+    position: static;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add spacing */
+  }
+  
+  .threa {
+    position: static;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add spacing */
+  }
+  
+
+  .result {
+    display: none; /* Hide the results button */
+
+  }
+
+  .progress {
+    margin-left: 0;
+    text-align: center; /* Center align the progress text */
+  }
+}

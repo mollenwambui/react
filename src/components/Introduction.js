@@ -3,53 +3,56 @@ import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
 import '../components/Introduction.css';
 import 'typeface-nunito';
+import vector from '../images/Vector.png';
+import swot from '../images/swot.png';
+import question from '../images/question.png';
+import need from '../images/need.png';
+import user from '../images/user.png';
+import arrow from '../images/arrow.png';
 
 const Introduction = () => {
   return (
-    <div className="introduction-container" style={{ fontFamily: 'Nunito, sans-serif' }}>
-     
-      <div className="card5">
-        <h3 className="card-title">What is this tool?</h3>
-        <p className="card-text">
-          SWOT is an acronym that stands for Strengths, Weaknesses,
-          Opportunities, and Threats. SWOT analysis is a framework used to
-          evaluate and analyze the internal and external factors that can impact
-          the success of a business or project. The strengths and weaknesses
-          refer to the internal factors of an organization, while opportunities
-          and threats are external factors. By conducting a SWOT analysis,
-          businesses and individuals can gain a better understanding of their
-          current position, identify potential challenges and opportunities, and
-          develop effective strategies to achieve their goals.
-        </p>
-      </div>
-      <div className="card6">
-        <h3 className="card-title">Why do I need it?</h3>
-        <p className="card-text">
-          SWOT analysis is a valuable framework that can be used to evaluate and
-          analyze the internal and external factors that can impact the success
-          of a business or project. Conducting a SWOT analysis can help you to
-          identify the strengths and weaknesses within your organization or
-          project, as well as external opportunities and threats that can affect
-          your success. By conducting a SWOT analysis, you can gain a better
-          understanding of your current position, identify potential challenges
-          and opportunities, and develop effective strategies to achieve your
-          goals. This tool is particularly useful for strategic planning, risk
-          management, decision-making, performance evaluation, and competitive
-          analysis.
-        </p>
-      </div>
-      <div className="card7">
-        <h3 className="card-title">When should I use it?</h3>
-        <p className="card-text">
-          SWOT analysis is a versatile tool that can be used in various personal
-          and professional settings. You should use it when you are starting a
-          new business or project, improving an existing one, considering a new
-          product or service, evaluating competition, or assessing personal or
-          professional development. By conducting a SWOT analysis, you can gain
-          valuable insights into your situation, identify areas for improvement
-          and growth, and develop effective strategies to achieve success.
-        </p>
-      </div>
+    <div className="introduction-container" style={{ fontFamily: 'Nunito' }}>
+
+    
+   
+ 
+     <img src={vector} className= 'vector'/>
+
+     <img src={swot} className= 'swot'/>
+    <h2 className='inst'>Introduction</h2>
+     <div className='all'>
+    <div className='card1'>
+    <img src={question} className= 'quiz'/>
+     <h2 className='what'>What is this tool?</h2>
+   <p className='content'> A SWOT analysis is a tool used to evaluate an organization's internal strengths and weaknesses as well as external opportunities and threats. <br/> It helps structure thoughts about the company and its environment, enabling strategic decision-making. <br/> By identifying strengths, weaknesses, opportunities, and threats, companies can develop strategies to leverage their strengths, address weaknesses, capitalize on opportunities, and mitigate threats.
+</p>
+    </div>
+    <div className='card2'>
+    <img src={need} className= 'need'/>
+    <h2 className='what'>Why do i need it??</h2>
+  <p className='content'>You need a SWOT analysis because it provides a structured framework to assess your organization's internal strengths, weaknesses, and external opportunities and threats<br/>It helps you understand your competitive position, make informed decisions, and develop effective strategies <br/> Conducting a SWOT analysis enables you to identify areas of advantage, address limitations, capitalize on opportunities, and mitigate potential risks.
+</p>
+
+    </div>
+    <div className='card22'>
+    <img src={user} className= 'user'/>
+    <h2 className='what'>Why should I use it?</h2>
+    <p className='content'>You should use a SWOT analysis when you want to evaluate your organization's internal strengths, weaknesses, and external opportunities and threats.<br/>  It is particularly useful during strategic planning, decision-making processes, and when entering new markets or industries. <br/> Conducting a SWOT analysis allows you to assess your competitive position, identify areas for improvement, and make informed choices based on a comprehensive understanding of your business environment.</p>
+
+    
+    </div>
+    
+
+     </div>
+     <Link to="/user-guide">
+  <div  className='last'>
+    <h2 className='go' style={{ margin: 0 }}>Go to Template</h2>
+    <img src={arrow} className='arrow' style={{ marginLeft: '5px' }} />
+  </div>
+</Link>
+
+      
     </div>
   );
 };

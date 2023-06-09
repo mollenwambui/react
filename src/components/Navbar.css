@@ -1,75 +1,151 @@
-/* Navbar.css */
+.everything {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 10vh;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
 
-body{
-    background-color: #FDF7F3;
 }
 
-/* Navbar.css */
-/* Navbar.css */
+.navbar-content {
+  margin-left: 75%; /* Adjust the value as needed */
+}
 
-nav {
+.navbar ul {
+  margin-right: 0; /* Reset the margin to prevent the content from being cut off */
+}
+
+
+.logo {
+width: 8%;
+margin-left: -70%;
+margin-top: -0.5%;
+height: 8vh;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
- margin-left: 65%;
-  padding-right: 20px; /* Add space on the right */
-  margin-bottom: 20px; /* Add space between Navbars */
- 
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu li a.active {
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px; /* Reduce the right margin of the ul */
+}
+
+.navbar ul li {
+  margin-left: 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar ul li a.active {
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar ul li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #ff8000; /* Halfway orange */
 }
 
 /* Rest of your CSS styles */
 
-  
-  ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    margin-left: 10px;
-    margin-top: 4%;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #FF914D;
-  }
-  
-  li:not(:last-child) {
-    margin-right: 10px; /* Add space between words */
-  }
-  
-  li:last-child a {
-    margin-left: 10px; /* Add space after "Introduction" */
-  }
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-left: 10px;
+  margin-top: 4%;
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li:not(:last-child) {
+  margin-right: 10px; /* Add space between words */
+}
+
+li:last-child a {
+  margin-left: 10px; /* Add space after "Introduction" */
+}
+
+.content {
+  margin-top: 80px; /* Adjust this value to match the height of your Navbar */
+  /* Add more styles as needed */
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
   .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 999;
-    /* Add more styles as needed */
+    background-color: #fff;
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  
   }
   
-  .content {
-    margin-top: 60px; /* Adjust this value to match the height of your Navbar */
-    /* Add more styles as needed */
-  }
-  @media (min-width: 480px) and (max-width: 1024px) {
-    .navbar {
-      margin-left: -5%;
-      margin-top: -1%;
-    
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; /* Center align the items */
-    }
+  .navbar-content {
+    margin-left: 20%; /* Adjust the value as needed */
   }
   
-  
- 
+
+  .logo {
+    width: 19%;
+    margin-left: -40%;
+    height: 7vh;
+    left: 50%; /* Move the logo to the horizontal center */
+    transform: translateX(-50%); /* Adjust the horizontal centering */
+  }
+}
+
+
