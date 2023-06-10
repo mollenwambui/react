@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../components/UserGuide.css';
-import logo from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import 'typeface-nunito';
-import icon from '../images/Group.png';
 import UserJourney from './UserJourney';
 
 
 const UserGuide = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [checkedItems, setCheckedItems] = useState({ strengths: false, weaknesses: false, opportunities: false, threats: false });
 
   const getCardBackgroundColor = (slideIndex) => {
     switch (slideIndex) {
@@ -176,9 +172,6 @@ const UserGuide = () => {
 
   const navigate = useNavigate();
 
-  const handleSlideChange = (slideIndex) => {
-    setActiveSlide(slideIndex);
-  };
 
 
   useEffect(() => {

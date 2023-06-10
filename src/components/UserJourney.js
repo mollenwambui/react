@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './UserJourney.css';
-import { useNavigate } from 'react-router-dom';
 
 
 
@@ -16,11 +15,6 @@ const UserJourney = ({ activeSlide }) => {
     progressBarItems.map((_, index) => index === 0)
   );
 
-  const navigate = useNavigate();
-  const [factors, setFactors] = useState(['']);
-  const [weaknesses, setWeaknesses] = useState(['']);
-  const [opportunities, setOpportunities] = useState(['']);
-  const [threats, setThreats] = useState(['']);
 
   useEffect(() => {
     setCheckboxes((prevCheckboxes) =>
@@ -28,37 +22,8 @@ const UserJourney = ({ activeSlide }) => {
     );
   }, [activeSlide]);
 
-  const handleNextSlide = () => {
-    // Perform validation check here
-    if (activeSlide === 0 && factors[0] === '') {
-      // If the current slide is the first slide and factors input is empty, prevent navigation
-      return;
-    }
+ 
 
-    if (activeSlide === 1 && weaknesses[0] === '') {
-      // If the current slide is the second slide and weaknesses input is empty, prevent navigation
-      return;
-    }
-
-    if (activeSlide === 2 && opportunities[0] === '') {
-      // If the current slide is the third slide and opportunities input is empty, prevent navigation
-      return;
-    }
-
-    // Proceed to the next slide
-    navigate(`/slides/${activeSlide + 1}`);
-  };
-
-  const handleCheckResults = () => {
-    navigate('/results', {
-      state: {
-        factors,
-        weaknesses,
-        opportunities,
-        threats,
-      },
-    });
-  };
   return (
     <div className="user-journey"         style={{ fontFamily: 'Nunito, sans-serif' }}
     >

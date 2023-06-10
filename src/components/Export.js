@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import pptxgen from 'pptxgenjs';
 import { saveAs } from 'file-saver';
 import jsPDF from 'jspdf';
 import 'typeface-nunito';
 import logo from '../images/powerpoint.jpeg';
 import pdf from '../images/pdf.png';
-import pptx from 'pptxgenjs';
 import '../components/Export.css';
 
 const Export = ({ content }) => {
@@ -26,134 +24,6 @@ const Export = ({ content }) => {
   };
 //// ...
 
-const generatePowerPoint = async (content) => {
-  if (!content) {
-    return;
-  }
-
-  try {
-    setLoading(true);
-    const ppt = await generatePowerPointContent(content);
-    if (ppt) {
-      ppt.writeFile('presentation.pptx');
-    }
-  } catch (error) {
-    console.error('Error generating PowerPoint:', error);
-  } finally {
-    setLoading(false);
-  }
-};
-
-const generatePowerPointContent = (content) => {
-  if (!content) {
-    return null;
-  }
-
-  const {
-    factors = [],
-    weaknesses = [],
-    opportunities = [],
-    threats = [],
-  } = content;
-
-  const ppt = new pptxgen();
-
-  // Set slide size and background color
-  ppt.layout = 'LAYOUT_16x9';
-  ppt.background = 'FFFFFF';
-
-  // Set font styles
-  ppt.defineSlideMaster({
-    title: 'Master',
-    background: 'FFFFFF',
-    margin: [0, 0, 0, 0],
-    fontFace: 'Arial',
-    fontSize: 14,
-    textColor: '000000',
-  });
-
-  // Set card colors
-  const cardColors = {
-    strengths: '2e75f0',
-    weaknesses: 'f86c0f',
-    opportunities: '46aa08',
-    threats: 'd19f09',
-  };
-
-  // Set card positions and dimensions
-  const cardPositions = {
-    strengths: { x: 0.5, y: 0.5 },
-    weaknesses: { x: 7.5, y: 0.5 },
-    opportunities: { x: 0.5, y: 4.5 },
-    threats: { x: 7.5, y: 4.5 },
-  };
-  const cardWidth = 6;
-  const cardHeight = 3;const generateSlideWithCards = (ppt, title, cards, position, color, cardWidth, cardHeight) => {
-    const slide = ppt.addSlide('Master');
-    slide.addShape({
-      type: 'rect',
-      x: position.x,
-      y: position.y,
-      w: cardWidth,
-      h: cardHeight,
-      fill: color,
-    });
-  
-    slide.addText(title, {
-      x: position.x + 0.5,
-      y: position.y + 0.5,
-      w: cardWidth - 1,
-      h: 1,
-      fontSize: 16,
-      color: 'FFFFFF',
-      valign: 'top',
-    });
-  
-    const contentText = cards.map((card) => `\u2022 ${card}`).join('\n');
-    slide.addText(contentText, {
-      x: position.x + 0.5,
-      y: position.y + 1.5,
-      w: cardWidth - 1,
-      h: cardHeight - 2,
-      fontSize: 12,
-      color: '000000',
-      valign: 'top',
-    });
-  };
-  
-  const generatePowerPointContent = (content) => {
-    // Existing code for generatePowerPointContent function...
-  
-    // Generate slide with cards
-    generateSlideWithCards(ppt, 'Strengths', factors, cardPositions.strengths, cardColors.strengths, cardWidth, cardHeight);
-    generateSlideWithCards(ppt, 'Weaknesses', weaknesses, cardPositions.weaknesses, cardColors.weaknesses, cardWidth, cardHeight);
-    generateSlideWithCards(ppt, 'Opportunities', opportunities, cardPositions.opportunities, cardColors.opportunities, cardWidth, cardHeight);
-    generateSlideWithCards(ppt, 'Threats', threats, cardPositions.threats, cardColors.threats, cardWidth, cardHeight);
-  
-    // Return the PowerPoint presentation object
-    return ppt;
-  };
-  
-  const generatePowerPoint = async (content) => {
-    // Existing code for generatePowerPoint function...
-  
-    try {
-      setLoading(true);
-      const ppt = await generatePowerPointContent(content);
-      if (ppt) {
-        ppt.writeFile('presentation.pptx');
-      }
-    } catch (error) {
-      console.error('Error generating PowerPoint:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-  
-
-  // Return the PowerPoint presentation object
-  return ppt;
-};
 
 
 
@@ -205,7 +75,6 @@ const generatePDFContent = async (content) => {
   };
   const cardWidth = pageWidth * 0.4;
   const borderRadius = 4;
-  const cardMargin = 10; // Adjust the margin as per your preference
 
   // Set card title styles
   pdf.setFontSize(18);
@@ -286,7 +155,7 @@ const generatePDFContent = async (content) => {
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginLeft: '15%' }}>
         <div className="ppt">
-          <img src={logo} alt="PowerPoint Logo" onClick={generatePowerPoint} style={{ cursor: 'pointer' }} />
+          <img src={logo} alt="PowerPoint Logo"  />
           {loading && <p>Generating PowerPoint...</p>}
         </div>
         <div className="content">

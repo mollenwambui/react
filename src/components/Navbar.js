@@ -11,7 +11,7 @@ class Navbar extends React.Component {
 <div className='everything'>
 <nav className="navbar">
 <div className="navbar-content">
-<img src={logo} className="logo" />
+<img src={logo} className="logo"  alt='logo'/>
 
 
 <ul>

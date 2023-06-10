@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Introduction from './components/Introduction';
 import UserGuide from './components/UserGuide';
 import CheckResults from './components/ResultsPage';
 import Export from './components/Export';
 import Navbar from './components/Navbar';
-import UserJourney from './components/UserJourney';
 
 const App = () => {
   const [content, setContent] = useState(null);
