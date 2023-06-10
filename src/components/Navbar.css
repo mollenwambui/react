@@ -149,3 +149,31 @@ li:last-child a {
 }
 
 
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 10vh;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  
+  }
+  
+  .navbar-content {
+    margin-left: 15%; /* Adjust the value as needed */
+  }
+
+  .logo {
+    width: 13%;
+    margin-left: -43%;
+    height: 3vh;
+    left: 50%; /* Move the logo to the horizontal center */
+    transform: translateX(-50%); /* Adjust the horizontal centering */
+  }
+}

@@ -503,3 +503,152 @@ button.inactive {
       }
 
   }
+  @media (min-width: 300px) and (max-width: 500px) {
+
+    .card{
+      height: 70vh;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      background-color:  #F5F5F5;
+      border-radius: 30px;
+      margin-left: 10%;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+      margin-top: 35%;
+    
+  
+  }
+  .next-0 {
+    margin-left: 70%;
+    margin-top: 5%;
+    width:25%;
+    height: 3vh;
+    border-radius: 5px;
+   background-color: #F8731B;
+   border: none;
+   color: white;
+       
+     }
+
+.plus{
+  
+  margin-left: 90%;
+}
+     
+     .next-1 {
+    
+      margin-left: 70%;
+      margin-top: 0%;
+      width:25%;
+      height: 3vh;
+      border-radius: 5px;
+     background-color: #F8731B;
+     border: none;
+     color: white;
+     
+   
+     }
+     
+     
+     .next-2 {
+      margin-left: 70%;
+      margin-top: 0%;
+      width:25%;
+      height: 3vh;
+      border-radius: 5px;
+     background-color: #F8731B;
+     border: none;
+     color: white;
+     
+     }
+     .previous-1 {
+      margin-left: 5%;
+      margin-top: 16%;
+      width:30%;
+      height: 3vh;
+      border-radius: 5px;
+     background-color: #F8731B;
+     border: none;
+     color: white;
+     }
+     
+     
+     .previous-2 {
+      margin-left: 5%;
+      margin-top: 16%;
+      width:30%;
+      height: 3vh;
+      border-radius: 5px;
+     background-color: #F8731B;
+     border: none;
+     color: white;
+     }
+     
+     .previous-3 {
+      margin-left: 5%;
+      margin-top: 16%;
+      width:30%;
+      height: 3vh;
+      border-radius: 5px;
+     background-color: #F8731B;
+     border: none;
+     color: white;
+     }
+     .results{
+      margin-left: 20%;
+      height: 4vh;
+      border-radius: 8px;
+      background-color: orange;
+      color: white;
+      border:  none;
+      width: 63%;
+      margin-top: 10%;
+      font-size: 13px;
+      font-weight: bolder;
+      animation: flash 1s infinite;
+    }
+    @keyframes flash {
+      0% {
+        background-color: #F8731B;
+      }
+      50% {
+        background-color: #228B22;
+      }
+      100% {
+        background-color: #b6a408;
+      }
+    }
+ 
+
+  
+
+   
+    .alls {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 12%;
+    
+     
+    }
+    .arrow{
+      margin-left: 5%;
+      color: grey;
+    }
+    
+    .logo-container{
+      padding-right: 1.7%;
+     
+    }
+   
+    
+    
+    .all button{
+      margin-right: 20px;
+    }
+    .logo-container img{
+      width: 80%;
+      height: 2vh;
+    }
+  }
