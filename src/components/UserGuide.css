@@ -810,7 +810,7 @@ button.inactive {
   
   }
   .previous-1 {
-    width: 14%;
+    width: 13.5%;
     height: 3vh;
     border-radius: 5px;
     background-color: #F8731B;
@@ -819,7 +819,7 @@ button.inactive {
   }
    
   .previous-2 {
-    width: 14%;
+    width: 13.5%;
     height: 3vh;
     border-radius: 5px;
     background-color: #F8731B;
@@ -827,14 +827,66 @@ button.inactive {
     color: white;
    }
    .previous-3 {
-    width: 13%;
+    width: 13.5%;
     height: 3vh;
     border-radius: 5px;
     background-color: #F8731B;
     border: none;
     color: white;
    }
-   
-  
+   .next-1 {
+    margin-left: 65%;
+    margin-top: 5%;
+    width:13%;
+    height: 3vh;
+    border-radius: 5px;
+   background-color: #F8731B;
+   border: none;
+   color: white;
+  }
+  .next-0 {
+    margin-left: 79%;
+    margin-top: 5%;
+    width:13%;
+    height: 3vh;
+    border-radius: 5px;
+   background-color: #F8731B;
+   border: none;
+   color: white;
+       
+     }
 
+     .next-2 {
+      margin-left: 65%;
+      margin-top: 5%;
+      width:13%;
+      height: 3vh;
+      border-radius: 5px;
+     background-color: #F8731B;
+     border: none;
+     color: white;
+     }
+     .results{
+      margin-left: 12%;
+      height: 4vh;
+      border-radius: 8px;
+      background-color: orange;
+      color: white;
+      border:  none;
+      width: 43%;
+      margin-top: 20%;
+      font-size: 13px;
+      font-weight: bolder;
+      animation: flash 1s infinite;
+    }
+    @keyframes flash {
+      0% {
+        background-color: #F8731B;
+      }
+      50% {
+        background-color: #228B22;
+      }
+      100% {
+        background-color: #b6a408;
+      }
   }
