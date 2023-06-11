@@ -414,7 +414,7 @@ text-align: center;
   }
   
   .card1{
-    height: 50vh;
+    height: 45vh;
     width: 25%;
     justify-content: center;
     align-items: center;
@@ -429,7 +429,7 @@ text-align: center;
   }
   
   .card2{
-    height: 50vh;
+    height: 45vh;
     width: 25%;
     justify-content: center;
     align-items: center;
@@ -444,7 +444,7 @@ text-align: center;
   
   }
   .card22{
-    height: 50vh;
+    height: 45vh;
     width: 25%;
     justify-content: center;
     align-items: center;
@@ -487,7 +487,7 @@ text-align: center;
   
   }
   .card1 .content {
-     font-size: 13px;
+     font-size: 15px;
     line-height: 1.5;
     padding: 20px;
     margin-top: 10px;
@@ -497,7 +497,7 @@ text-align: center;
   }
   
   .card2 .content {
-    font-size: 13px;
+    font-size: 15px;
    line-height: 1.5;
    padding: 20px;
    margin-top: 10px;
@@ -506,7 +506,7 @@ text-align: center;
   text-align: center;
   }
   .card22 .content {
-    font-size: 13px;
+    font-size: 15px;
    line-height: 1.5;
    padding: 20px;
    margin-top: 10px;
