@@ -177,3 +177,61 @@ li:last-child a {
     transform: translateX(-50%); /* Adjust the horizontal centering */
   }
 }
+@media (min-width: 1025px) and (max-width: 1100px) { 
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .navbar-content {
+    margin-left: 45%; /* Adjust the value as needed */
+  }
+  
+
+  .logo {
+    width: 18%;
+    margin-left: -40%;
+    height: 7vh;
+    left: 50%; /* Move the logo to the horizontal center */
+    transform: translateX(-50%); /* Adjust the horizontal centering */
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 2000px) { 
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .navbar-content {
+    margin-left: 65%; /* Adjust the value as needed */
+  }
+  
+
+  .logo {
+    width: 15%;
+    margin-left: -40%;
+    height: 7vh;
+    left: 50%; /* Move the logo to the horizontal center */
+    transform: translateX(-50%); /* Adjust the horizontal centering */
+  }
+}
+
+
+

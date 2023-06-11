@@ -403,7 +403,7 @@ const UserGuide = () => {
               </div>
             )}
 
-            <div className="button-container">
+            <div className="button-containers">
               {activeSlide > 0 && (
                 <button className={`previous previous-${activeSlide}`} onClick={handlePreviousSlide}>
                   Previous
