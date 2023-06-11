@@ -27,7 +27,7 @@
 
 
 .logo {
-width: 8%;
+width: 6%;
 margin-left: -70%;
 margin-top: -0.5%;
 height: 8vh;
@@ -171,7 +171,7 @@ li:last-child a {
 
   .logo {
     width: 13%;
-    margin-left: -43%;
+    margin-left: -45%;
     height: 3vh;
     left: 50%; /* Move the logo to the horizontal center */
     transform: translateX(-50%); /* Adjust the horizontal centering */
@@ -225,7 +225,7 @@ li:last-child a {
   
 
   .logo {
-    width: 15%;
+    width: 10%;
     margin-left: -40%;
     height: 7vh;
     left: 50%; /* Move the logo to the horizontal center */

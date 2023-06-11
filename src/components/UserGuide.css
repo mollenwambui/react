@@ -797,7 +797,7 @@ button.inactive {
   @media (min-width: 1100px) and (max-width: 2000px) { 
     .card{
       height: 70vh;
-      width: 60%;
+      width: 50%;
       justify-content: center;
       align-items: center;
       background-color:  #F5F5F5;
