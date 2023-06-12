@@ -490,7 +490,7 @@ margin-left: -3%;  }
     text-align: center; /* Center align the progress text */
   }
 }
-@media (min-width: 1100px) and (max-width: 2000px) { 
+@media (min-width: 1100px) and (max-width: 3000px) { 
   .user-journey {
     width: 20%; /* Adjust the width as needed */
     margin: 0 auto;
@@ -502,5 +502,30 @@ margin-left: -3%;  }
     border-radius: 10px; /* Add border radius value */
     box-shadow: 0px 0px 10px #f7c5c5; /* Add orange shadow */
     height: 40vh;
+  }
+
+  .stren {
+    position: static;
+    top: 18%;
+    left: 15px;
+    font-size: 15px;
+margin-left: -3%;  }
+  
+  .weak {
+    position: static;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add spacing */
+  }
+  
+  .oppo {
+    position: static;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add spacing */
+  }
+  
+  .threa {
+    position: static;
+    font-size: 15px;
+    margin-bottom: 10px; /* Add spacing */
   }
 }
