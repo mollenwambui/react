@@ -794,7 +794,7 @@ button.inactive {
       height: 2vh;
     }
   }
-  @media (min-width: 1100px) and (max-width: 2000px) { 
+  @media (min-width: 1100px) and (max-width: 3000px) { 
     .card{
       height: 70vh;
       width: 50%;
@@ -868,7 +868,7 @@ button.inactive {
    color: white;
      }
      .results{
-      margin-left: 85%;
+      margin-left: 83%;
       height: 4vh;
       border-radius: 8px;
       background-color: orange;
