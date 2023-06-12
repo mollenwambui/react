@@ -563,5 +563,17 @@ margin-left: -3%;  }
     left: 20px;
     font-size: 17px;
   }
+  .checkboxes-container {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Adjust the justify-content value */
+    height: 59%;
+  
+  }
+  
 }
 
