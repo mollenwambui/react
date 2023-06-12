@@ -11,7 +11,11 @@
     height: 12vh;
 }
 
-  
+  .final{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+  }
   
 
 .content{
@@ -64,6 +68,9 @@
         margin-top: 5%;
         display: flex;
         font-size: 14px;
+    }
+    .final{
+        margin-top: -4%;
     }
 
 .pdf img{

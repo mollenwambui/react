@@ -153,7 +153,7 @@ const generatePDFContent = async (content) => {
       <div className='export'>
         <h3>Would you like to Export your results?</h3>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', marginLeft: '15%' }}>
+      <div className='final'>
         <div className="ppt">
           <img src={logo} alt="PowerPoint Logo"  />
           {loading && <p>Generating PowerPoint...</p>}

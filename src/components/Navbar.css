@@ -171,7 +171,7 @@ li:last-child a {
 
   .logo {
     width: 13%;
-    margin-left: -45%;
+    margin-left: -40%;
     height: 3vh;
     left: 50%; /* Move the logo to the horizontal center */
     transform: translateX(-50%); /* Adjust the horizontal centering */

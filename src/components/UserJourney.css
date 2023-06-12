@@ -506,30 +506,30 @@ margin-left: -3%;  }
 
 .stren {
   position: absolute;
-  top: 18%;
+  top: 19%;
   left: 20px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .weak {
   position: absolute;
-  top: 34%;
+  top: 35%;
   left: 20px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .oppo {
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 20px;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .threa{
   position: absolute;
-  top: 64%;
+  top: 65%;
   left: 20px;
-  font-size: 18px;
+  font-size: 17px;
 }
   
 }
