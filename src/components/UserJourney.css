@@ -354,26 +354,26 @@ margin-left: -3%;  }
   
   .stren {
     position: static;
-    top: 18%;
+
     left: 15px;
-    font-size: 12px;
+    font-size: 10px;
 margin-left: -3%;  }
   
   .weak {
     position: static;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px; /* Add spacing */
   }
   
   .oppo {
     position: static;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px; /* Add spacing */
   }
   
   .threa {
     position: static;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px; /* Add spacing */
   }
   
