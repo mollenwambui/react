@@ -536,28 +536,28 @@ margin-left: -3%;  }
 @media (max-width: 1440px) { 
   .stren {
     position: absolute;
-   top: 10%;
+   top: 15%;
     left: 20px;
     font-size: 17px;
   }
   
   .weak {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 20px;
     font-size: 17px;
   }
   
   .oppo {
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 20px;
     font-size: 17px;
   }
   
   .threa{
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 20px;
     font-size: 17px;
   }
