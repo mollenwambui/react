@@ -533,3 +533,33 @@ margin-left: -3%;  }
 }
   
 }
+@media (max-width: 1440px) { 
+  .stren {
+    position: absolute;
+   margin-top: 70%;
+    left: 20px;
+    font-size: 17px;
+  }
+  
+  .weak {
+    position: absolute;
+    margin-top: 50%;
+    left: 20px;
+    font-size: 17px;
+  }
+  
+  .oppo {
+    position: absolute;
+    margin-top: 60%;
+    left: 20px;
+    font-size: 17px;
+  }
+  
+  .threa{
+    position: absolute;
+    margin-top: 55%;
+    left: 20px;
+    font-size: 17px;
+  }
+}
+
