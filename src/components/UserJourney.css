@@ -129,27 +129,27 @@
 .stren {
   position: absolute;
   top: 18%;
-  left: 20px;
+  left: 18px;
   font-size: 18px;
 }
 
 .weak {
   position: absolute;
-  top: 34%;
-  left: 20px;
+  top: 35%;
+  left: 18px;
   font-size: 18px;
 }
 
 .oppo {
   position: absolute;
-  top: 48%;
-  left: 20px;
+  top: 50%;
+  left: 18px;
   font-size: 18px;
 }
 
 .threa{
   position: absolute;
-  top: 64%;
+  top: 65%;
   left: 20px;
   font-size: 18px;
 }
@@ -501,14 +501,14 @@ margin-left: -3%;  }
     margin-top: -32%;
     border-radius: 10px; /* Add border radius value */
     box-shadow: 0px 0px 10px #f7c5c5; /* Add orange shadow */
-    height: 39vh;
+    height: 40vh;
   }
 
 .stren {
   position: absolute;
- margin-top: 50%;
+ margin-top: 70%;
   left: 20px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .weak {
@@ -527,7 +527,7 @@ margin-left: -3%;  }
 
 .threa{
   position: absolute;
-  margin-top: 5%;
+  margin-top: 55%;
   left: 20px;
   font-size: 17px;
 }
