@@ -536,14 +536,14 @@ margin-left: -3%;  }
 @media (max-width: 1440px) { 
   .stren {
     position: absolute;
-   top: 18%;
+   top: 19%;
     left: 20px;
     font-size: 17px;
   }
   
   .weak {
     position: absolute;
-    top: 34%;
+    top: 36%;
     left: 20px;
     font-size: 17px;
   }
