@@ -501,33 +501,33 @@ margin-left: -3%;  }
     margin-top: -32%;
     border-radius: 10px; /* Add border radius value */
     box-shadow: 0px 0px 10px #f7c5c5; /* Add orange shadow */
-    height: 37vh;
+    height: 39vh;
   }
 
 .stren {
   position: absolute;
-  top: 20%;
+ margin-top: 50%;
   left: 20px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .weak {
   position: absolute;
-  top: 36%;
+  margin-top: 50%;
   left: 20px;
   font-size: 17px;
 }
 
 .oppo {
   position: absolute;
-  top: 52%;
+  margin-top: 60%;
   left: 20px;
   font-size: 17px;
 }
 
 .threa{
   position: absolute;
-  top: 68%;
+  margin-top: 5%;
   left: 20px;
   font-size: 17px;
 }
